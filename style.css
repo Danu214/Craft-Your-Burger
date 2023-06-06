@@ -1,151 +1,367 @@
-
-.box {
-    width: 500px;
-    margin: 150px 700px;
-    height: 450px;
+body{
+    background-color: #2b2a2a;
 }
-.create-box{
-    width: 500px;
-    height: 200px;
-    margin-top: -564px;
-    margin-left: 20px;
+.burger-craft .left-side {
+    margin:0;
+    padding:0;
+    line-height:1;
+    box-sizing:border-box;
+    float:left;
+    width:320px
 }
-
-.bread-top {
-    height: 20%;
-    width: 80%;
-    background: linear-gradient(#bc581e, #e27b36);
-    border-radius: 50% 50% 0 0;
-    box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
-    position: relative;
-
-}
-
-.seeds {
-    position: absolute;
-    width: 10%;
-    height: 15%;
-    background-color: white;
-    left: 30%;
-    top: 50%;
-    border-radius: 40%;
-    transform: rotate(-20deg);
-    box-shadow: inset -2px -3px #c9c9c9;
-}
-
-.seeds:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: white;
-    left: -170%;
-    top: -260%;
-    border-radius: 40%;
-    transform: rotate(60deg);
-    box-shadow: inset -1px 2px #c9c9c9;
-}
-
-.seeds:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: white;
-    left: 180%;
-    top: -50%;
-    border-radius: 40%;
-    transform: rotate(60deg);
-    box-shadow: inset -1px -3px #c9c9c9;
-}
-
-.seeds2 {
-    position: absolute;
-    width: 10%;
-    height: 15%;
-    background-color: white;
-    left: 64%;
-    top: 50%;
-    border-radius: 40%;
-    transform: rotate(10deg);
-    box-shadow: inset -3px -0 #c9c9c9;
-}
-
-.seeds2:after {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    content: "";
-    left: 150%;
-    top: -130%;
-    border-radius: 40%;
-    transform: rotate(90deg);
-    box-shadow: inset 1px 3px #c9c9c9;
-}
-
-.salad {
-    width: 235px;
-    height: 100px;
-    margin-left: 130px;
-    background-image: url("https://burgercraft.md/img/addons/2017-10-26/salata-iceberg.svg");
-    background-repeat: no-repeat;
-}
-
-.bacon {
-    width: 235px;
-    height: 100px;
-    margin-left: 130px;
-    background-image: url("https://burgercraft.md/img/addons/2017-10-16/bacon-crocant.svg");
-    background-repeat: no-repeat;
-}
-
-.cheese {
-    width: 235px;
-    height: 100px;
-    margin-left: 130px;
-    background-image: url("https://burgercraft.md/img/addons/2017-10-16/cheddar.svg");
-    background-repeat: no-repeat;
-    border-radius: 20px;
-}
-
-.meat {
-    width: 235px;
-    height: 100px;
-    margin-left: 130px;
-    background-image : url("https://burgercraft.md/img/addons/2020-10-12/pirjoala-de-pui.svg");
-    background-repeat: no-repeat;
-}
-
-.bread-bottom {
-    height: 13%;
-    width: 80%;
-    background: linear-gradient(#f08e4a, #e27b36);
-    margin: 2% auto;
-    box-shadow: inset -15px 0 #c15711;
-    border-radius: 0 0 30px 30px;
-}
-.label{
-    /*border: 2px solid #ffd600;*/
-    width: 129px;
-    /*margin-bottom: 10px;*/
-    margin-top: 10px;
-    height: 20px;
-    color: #ffd600;
-    /*font-size: 20px;*/
+.burger-craft .left-side .burger-item {
+    margin-bottom:15px;
+    text-align:center
 }
 .craft_select{
-    border: 2px solid #ffd600;
-    height: 20px;
+    display: block;
+    background: #2b2a2a;
+    border: 3px solid #f8bb46;
+    width: 300px;
+    font-size: large;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
 }
-.personal-name-block{
-    border: 4px solid #ffd600;
-    width: 171px;
+.burger-craft .left-side .burger-item .label {
+    display:block;
+    border-radius:0;
+    white-space:normal;
+    color:#f8bb46;
+    font-size:20px;
+    font-weight:900;
+    text-transform:uppercase;
+    text-align:left;
+    margin:0;
+    padding:0;
+    margin-left: 101px;
+}
+.burger-craft .left-side .burger-item .field-row {
+    margin-top:10px;
+    font-size:0;
+    text-align:left
+}
+.burger-craft .left-side .burger-item .field-row .field-wrap {
+    display:inline-block;
+    vertical-align:middle;
+    font-size:14px;
+    width:270px
+}
+.burger-craft .left-side .personal-name-block {
+    display:inline-block;
+    vertical-align:middle;
+    font-size:14px;
+    width:270px
+}
+.burger-craft .left-side .personal-name-block input {
+    padding:0 35px 0 20px;
+    background-color:transparent;
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
+    height:45px;
+    line-height:41px;
+    width:100%;
+    border:2px solid #f8bb46;
+    margin-left: 70px;
+}
+.burger-craft .left-side .personal-name-block input::-webkit-input-placeholder {
+    color:#fff;
+    opacity:1;
+    text-overflow:ellipsis
+}
+.burger-craft .left-side .personal-name-block input::-moz-placeholder {
+    color:#fff;
+    opacity:1;
+    text-overflow:ellipsis
+}
+.burger-craft .left-side .personal-name-block input:-moz-placeholder {
+    color:#fff;
+    opacity:1;
+    text-overflow:ellipsis
+}
+.burger-craft .left-side .personal-name-block input:-ms-input-placeholder {
+    color:#fff;
+    opacity:1;
+    text-overflow:ellipsis
+}
+.burger-craft .left-side .burger-item .field-row .del-item {
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:20px;
+    cursor:pointer;
+    width:15px;
+    height:17px;
+    background:url('./test/delete-option.png') no-repeat center;
+    -webkit-transition:all .3s;
+    transition:all .3s
+}
+.burger-craft .left-side .burger-item .add-item {
+    display:inline-block;
+    cursor:pointer;
+    margin-top:10px;
+    text-align:center;
+    font-size:0;
+    margin-right:45px
+}
+.burger-craft .left-side .burger-item .add-item .plus-icon {
+    position:relative;
+    overflow:hidden;
+    display:inline-block;
+    vertical-align:middle;
+    width:25px;
+    height:25px;
+    text-align:center;
+    line-height:21px;
+    border:2px solid #f8bb46;
+    border-radius:50%;
+    -webkit-transition:all .3s;
+    transition:all .3s
+}
+.burger-craft .left-side .burger-item .add-item .plus-icon:before {
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    width:1px;
+    height:9px;
+    background-color:#fff
+}
+.burger-craft .left-side .burger-item .add-item .plus-icon:after {
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    width:9px;
+    height:1px;
+    background-color:#fff
+}
+.burger-craft .left-side .burger-item .add-item .text {
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:10px;
+    color:#f8bb46;
+    font-size:14px;
+    font-weight:900;
+    text-transform:uppercase
+}
+.burger-craft .left-side .totals-del {
+    display:block;
+    width:270px;
+    height:2px;
+    background:#f8bb46;
+    margin:50px 0 45px;
+    border:none;
+    margin-left: 70px;
+}
+.burger-craft .left-side .craft-totals .result-row {
+    font-size:16px;
+    text-transform:uppercase;
+    color:#fff;
+    margin-bottom:5px
+}
+.burger-craft .left-side .craft-totals .result-row .label {
+    padding:0;
+    margin:0;
+    font-size:16px
+}
+.burger-craft .left-side .craft-totals .result-row .value {
+    color:#f8bb46
+}
+.burger-craft .left-side .craft-totals .result-row .mass {
+    font-size:14px;
+    text-transform:none
+}
+.burger-craft .left-side .craft-totals .total-price-row {
+    margin-top:10px;
+    font-size:24px;
+    text-transform:uppercase;
+    color:#fff
+}
+.burger-craft .left-side .craft-totals .total-price-row .label {
+    padding:0;
+    margin:0;
+    font-size:24px;
+}
+.burger-craft .left-side .craft-totals .total-price-row .value {
+    color:#f8bb46
+}
+.burger-craft .left-side .craft-totals .total-price-row .mass {
+    font-size:22px;
+    text-transform:none
+}
+.burger-craft .left-side .craft-btns {
+    margin-top:40px;
+    font-size:0
+}
+.burger-craft .left-side .craft-btns .add-to-cart {
+    display:block;
+    width:270px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#fff;
+    font-size:14px;
+    font-weight:500;
+    text-transform:uppercase;
+    background-color:#f8bb46;
+    padding:0 10px;
+    border:none;
+    border-radius:0;
+    margin:0;
+    -webkit-transition:all .3s;
+    transition:all .3s;
+    position:relative;
+    outline:0
+}
+.burger-craft .left-side .craft-btns .add-to-cart:hover {
+    opacity:.8
+}
+.burger-craft .left-side .craft-btns .reset {
+    margin-top:20px;
+    display:block;
+    width:270px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#f8bb46;
+    font-size:14px;
+    font-weight:500;
+    text-transform:uppercase;
+    background-color:#fff;
+    padding:0 10px;
+    border:none;
+    border-radius:0;
+    -webkit-transition:all .3s;
+    transition:all .3s;
+    margin-left: 70px;
+}
+.add_card {
+    display: flex;
+    justify-content: center;
+    background: orange;
+    width: 350px;
+    font-size: medium;
+    color: white;
+    height: 45px;
+    padding: 10px;
     margin-top: 10px;
-    height: 34px;
+    cursor: pointer;
+    opacity:1;
+    margin-left: 70px;
 }
-#personal_name{
-    width: 165px;
-    height: 29px;
+.add_card:hover{
+    transition: 0.5s;
+    opacity:0.8;
+    color: darkgray;
 }
+.restart_btn {
+    display: flex;
+    justify-content: center;
+    background: white;
+    width: 350px;
+    font-size: medium;
+    color: orange;
+    height: 45px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    opacity:1;
+}
+.restart_btn:hover {
+    transition: 0.5s;
+    opacity:0.8;
+    color: darkgray;
+}
+.burger-craft .left-side .craft-btns .reset:hover {
+    opacity:.8;
+}
+.burger-craft .right-side {
+    float:right;
+    width:720px
+}
+.burger-craft .right-side .burger-images .burger-image {
+    position:relative;
+    padding:0 235px;
+    margin-bottom:10px
+}
+.burger-craft .right-side .burger-images .burger-image:not(.no-arrow):before {
+    content:'';
+    position:absolute;
+    top:40px;
+    left:170px;
+    margin:auto;
+    width:60px;
+    height:30px;
+    background:url(./test/arrow-left.svg) no-repeat center
+}
+.burger-craft .right-side .burger-images .burger-image:not(.no-arrow):after {
+    content:'';
+    position:absolute;
+    top:20px;
+    right:170px;
+    margin:auto;
+    width:60px;
+    height:30px;
+    background:url(./test/arrow-right.svg) no-repeat center
+}
+.burger-craft .right-side .burger-images .burger-image:nth-of-type(even):before {
+    display:none
+}
+.burger-craft .right-side .burger-images .burger-image:nth-of-type(odd):after {
+    display:none
+}
+.burger-craft .right-side .burger-images .burger-image .image-description {
+    position:absolute;
+    top:10px;
+    color:#f8bb46;
+    font-size:36px;
+    width:150px;
+    text-align:left;
+    text-transform:lowercase
+}
+.burger-craft .right-side .burger-images .burger-image:nth-of-type(even) .image-description {
+    right:0;
+    top:10px
+}
+.burger-craft .right-side .burger-images .burger-image:nth-of-type(odd) .image-description {
+    left:0;
+    top:35px;
+    text-align:right
+}
+
+.cart-addon-list:hover {
+    cursor:pointer;
+    text-decoration:underline
+}
+.add-to-cart .add-to-cart-icon {
+    width:20px;
+    height:20px;
+    position:absolute;
+    left:-15px;
+    opacity:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    -webkit-transition:all .2s ease-in;
+    transition:all .2s ease-in
+}
+.add-to-cart .add-to-cart-msg {
+    position:absolute;
+    right:-100px;
+    opacity:0;
+    left:0;
+    margin:auto;
+    width:100%;
+    padding:0 10px 0 40px;
+}
+
