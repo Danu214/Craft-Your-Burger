@@ -1,251 +1,290 @@
+.burger-parts {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 body{
     background-color: #2b2a2a;
 }
-.burger-craft .left-side {
-    margin:0;
-    padding:0;
-    line-height:1;
-    box-sizing:border-box;
-    float:left;
-    width:320px
+.burger-representation {
+    width: 620px;
+    height: 200px;
+    margin-left: 300px;
+    margin-top: 150px;
 }
-.burger-craft .left-side .burger-item {
-    margin-bottom:15px;
-    text-align:center
-}
-.craft_select{
-    display: block;
-    background: #2b2a2a;
-    border: 3px solid #f8bb46;
-    width: 300px;
-    font-size: large;
-    color: white;
-    height: 50px;
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-left: 70px;
-}
-.burger-craft .left-side .burger-item .label {
+.burger-representation::before {
+    content: url("test/asset-1.svg");
     display:block;
-    border-radius:0;
-    white-space:normal;
-    color:#f8bb46;
-    font-size:20px;
-    font-weight:900;
-    text-transform:uppercase;
-    text-align:left;
-    margin:0;
-    padding:0;
-    margin-left: 101px;
+    width: 250px;
+    height: 110px;
+    background-repeat: no-repeat;
 }
-.burger-craft .left-side .burger-item .field-row {
-    margin-top:10px;
-    font-size:0;
-    text-align:left
-}
-.burger-craft .left-side .burger-item .field-row .field-wrap {
-    display:inline-block;
-    vertical-align:middle;
-    font-size:14px;
-    width:270px
-}
-.burger-craft .left-side .personal-name-block {
-    display:inline-block;
-    vertical-align:middle;
-    font-size:14px;
-    width:270px
-}
-.burger-craft .left-side .personal-name-block input {
-    padding:0 35px 0 20px;
-    background-color:transparent;
-    color:#fff;
-    font-size:16px;
-    font-weight:500;
-    height:45px;
-    line-height:41px;
-    width:100%;
-    border:2px solid #f8bb46;
-    margin-left: 70px;
-}
-.burger-craft .left-side .personal-name-block input::-webkit-input-placeholder {
-    color:#fff;
-    opacity:1;
-    text-overflow:ellipsis
-}
-.burger-craft .left-side .personal-name-block input::-moz-placeholder {
-    color:#fff;
-    opacity:1;
-    text-overflow:ellipsis
-}
-.burger-craft .left-side .personal-name-block input:-moz-placeholder {
-    color:#fff;
-    opacity:1;
-    text-overflow:ellipsis
-}
-.burger-craft .left-side .personal-name-block input:-ms-input-placeholder {
-    color:#fff;
-    opacity:1;
-    text-overflow:ellipsis
-}
-.burger-craft .left-side .burger-item .field-row .del-item {
-    display:inline-block;
-    vertical-align:middle;
-    margin-left:20px;
-    cursor:pointer;
-    width:15px;
-    height:17px;
-    background:url('./test/delete-option.png') no-repeat center;
-    -webkit-transition:all .3s;
-    transition:all .3s
-}
-.burger-craft .left-side .burger-item .add-item {
-    display:inline-block;
-    cursor:pointer;
-    margin-top:10px;
-    text-align:center;
-    font-size:0;
-    margin-right:45px
-}
-.burger-craft .left-side .burger-item .add-item .plus-icon {
-    position:relative;
-    overflow:hidden;
-    display:inline-block;
-    vertical-align:middle;
-    width:25px;
-    height:25px;
-    text-align:center;
-    line-height:21px;
-    border:2px solid #f8bb46;
-    border-radius:50%;
-    -webkit-transition:all .3s;
-    transition:all .3s
-}
-.burger-craft .left-side .burger-item .add-item .plus-icon:before {
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    margin:auto;
-    width:1px;
-    height:9px;
-    background-color:#fff
-}
-.burger-craft .left-side .burger-item .add-item .plus-icon:after {
-    content:'';
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    margin:auto;
-    width:9px;
-    height:1px;
-    background-color:#fff
-}
-.burger-craft .left-side .burger-item .add-item .text {
-    display:inline-block;
-    vertical-align:middle;
-    margin-left:10px;
-    color:#f8bb46;
-    font-size:14px;
-    font-weight:900;
-    text-transform:uppercase
-}
-.burger-craft .left-side .totals-del {
+
+.burger-representation::after {
+    content: url("test/asset-23.svg");
     display:block;
-    width:270px;
-    height:2px;
-    background:#f8bb46;
-    margin:50px 0 45px;
-    border:none;
-    margin-left: 70px;
+    width: 250px;
+    height: 110px;
+    background-repeat: no-repeat;
 }
-.burger-craft .left-side .craft-totals .result-row {
-    font-size:16px;
-    text-transform:uppercase;
-    color:#fff;
-    margin-bottom:5px
+
+
+.brioche-bun {
+    width: 250px;
+    height: 80px;
+    background-color: white;
 }
-.burger-craft .left-side .craft-totals .result-row .label {
-    padding:0;
-    margin:0;
-    font-size:16px
+
+.beef-patty{
+    width: 250px;
+    height: 80px;
+    background-image: url("test/pirjoala-de-vita.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-totals .result-row .value {
-    color:#f8bb46
+h4{
+    margin-top: 3px;
 }
-.burger-craft .left-side .craft-totals .result-row .mass {
-    font-size:14px;
-    text-transform:none
+.breaded-chicken-fillet {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/pirjoala-de-pui.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-totals .total-price-row {
-    margin-top:10px;
-    font-size:24px;
-    text-transform:uppercase;
-    color:#fff
+
+.grilled-chicken-fillet {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/pirjoala-de-pui.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-totals .total-price-row .label {
-    padding:0;
-    margin:0;
-    font-size:24px;
+
+.ketchup {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/ketchup.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-totals .total-price-row .value {
-    color:#f8bb46
+
+.tartar-sauce{
+    width: 250px;
+    height: 80px;
+    background-image: url("test/tartar-sos.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-totals .total-price-row .mass {
-    font-size:22px;
-    text-transform:none
+
+.mayonnaise {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/maioneza.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-btns {
-    margin-top:40px;
-    font-size:0
+
+.garlicBBQ-sauce {
+    width: 250px;
+    height: 80px;
+    background-image:url("test/tartar-sos.svg") ;
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-btns .add-to-cart {
-    display:block;
-    width:270px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    color:#fff;
-    font-size:14px;
-    font-weight:500;
-    text-transform:uppercase;
-    background-color:#f8bb46;
-    padding:0 10px;
-    border:none;
-    border-radius:0;
-    margin:0;
-    -webkit-transition:all .3s;
-    transition:all .3s;
-    position:relative;
-    outline:0
+
+.sriracha-sauce {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/sriracha.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-btns .add-to-cart:hover {
-    opacity:.8
+
+.classy-sauce {
+    width: 250px;
+    height: 80px;
+    background-image:url("test/tartar-sos.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.burger-craft .left-side .craft-btns .reset {
-    margin-top:20px;
-    display:block;
-    width:270px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    color:#f8bb46;
-    font-size:14px;
-    font-weight:500;
-    text-transform:uppercase;
-    background-color:#fff;
-    padding:0 10px;
-    border:none;
-    border-radius:0;
-    -webkit-transition:all .3s;
-    transition:all .3s;
-    margin-left: 70px;
+
+.garlic-sauce {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/tartar-sos.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
 }
-.add_card {
+
+.cheddar-cheese {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/cheddar.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.dorblu-cheese {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/cascaval-dorblu.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.crispy-bacon {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/bacon-crocant.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.fried-egg {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/ou-prajit.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.marinated-onion {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/ceapa-marinata.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.caramel-onion {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/ceapa-caramelizata.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.pickles {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/castraveti-murati.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.cucumber {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/castraveti-proaspeti.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.tomato {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/rosii.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.iceberg-lettuce {
+    width: 250px;
+    height: 80px;
+    background-image: url("test/salata-iceberg.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes example {
+    from {top: 200px;}
+    to {top: 0;}
+}
+
+.add-to-cart{
     display: flex;
     justify-content: center;
     background: orange;
@@ -257,14 +296,13 @@ body{
     margin-top: 10px;
     cursor: pointer;
     opacity:1;
-    margin-left: 70px;
 }
-.add_card:hover{
+.add-to-cart:hover{
     transition: 0.5s;
     opacity:0.8;
     color: darkgray;
 }
-.restart_btn {
+.reset-craft{
     display: flex;
     justify-content: center;
     background: white;
@@ -277,91 +315,148 @@ body{
     cursor: pointer;
     opacity:1;
 }
-.restart_btn:hover {
+.reset-craft:hover{
     transition: 0.5s;
     opacity:0.8;
     color: darkgray;
 }
-.burger-craft .left-side .craft-btns .reset:hover {
-    opacity:.8;
-}
-.burger-craft .right-side {
-    float:right;
-    width:720px
-}
-.burger-craft .right-side .burger-images .burger-image {
-    position:relative;
-    padding:0 235px;
-    margin-bottom:10px
-}
-.burger-craft .right-side .burger-images .burger-image:not(.no-arrow):before {
-    content:'';
-    position:absolute;
-    top:40px;
-    left:170px;
-    margin:auto;
-    width:60px;
-    height:30px;
-    background:url(./test/arrow-left.svg) no-repeat center
-}
-.burger-craft .right-side .burger-images .burger-image:not(.no-arrow):after {
-    content:'';
-    position:absolute;
-    top:20px;
-    right:170px;
-    margin:auto;
-    width:60px;
-    height:30px;
-    background:url(./test/arrow-right.svg) no-repeat center
-}
-.burger-craft .right-side .burger-images .burger-image:nth-of-type(even):before {
-    display:none
-}
-.burger-craft .right-side .burger-images .burger-image:nth-of-type(odd):after {
-    display:none
-}
-.burger-craft .right-side .burger-images .burger-image .image-description {
-    position:absolute;
-    top:10px;
-    color:#f8bb46;
-    font-size:36px;
-    width:150px;
-    text-align:left;
-    text-transform:lowercase
-}
-.burger-craft .right-side .burger-images .burger-image:nth-of-type(even) .image-description {
-    right:0;
-    top:10px
-}
-.burger-craft .right-side .burger-images .burger-image:nth-of-type(odd) .image-description {
-    left:0;
-    top:35px;
-    text-align:right
+.add-item{
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    color: gold;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-left: 20px;
 }
 
-.cart-addon-list:hover {
-    cursor:pointer;
-    text-decoration:underline
+.plus-button{
+    transition: all 0.75s;
+    margin-right: 10px;
+    margin-top: 10px;
 }
-.add-to-cart .add-to-cart-icon {
-    width:20px;
-    height:20px;
-    position:absolute;
-    left:-15px;
-    opacity:0;
-    top:0;
-    bottom:0;
-    margin:auto;
-    -webkit-transition:all .2s ease-in;
-    transition:all .2s ease-in
+
+.add-item:hover .plus-button {
+    transform: rotate(45deg);
 }
-.add-to-cart .add-to-cart-msg {
-    position:absolute;
-    right:-100px;
-    opacity:0;
-    left:0;
-    margin:auto;
-    width:100%;
-    padding:0 10px 0 40px;
+
+.item-list{
+    display: block;
+    background: #2b2a2a;
+    border: 3px solid #f8bb46;
+    width: 300px;
+    font-size: large;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+option{
+    background-color: rgb(247, 210, 129);
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+h3{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(247, 210, 129);
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.price{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(247, 210, 129);
+}
+
+.mass{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.total-price{
+    margin-bottom: 20px;
+    margin-left: 135px;
+}
+
+#personal-name{
+    padding: 0 35px 0 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    height: 45px;
+    line-height: 41px;
+    width: 214px;
+    border: 2px solid #f8bb46;
+}
+
+#more{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+#cheese{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+#secondSauce{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+#firstSauce{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+#meat{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+#bread{
+    border-radius: 0;
+    border-width: 3px;
+    width: 320px;
+    height: 50px;
+}
+
+.craft-buttons{
+    margin-left: 130px;
+    margin-bottom: 50px;
+}
+
+.burger-part{
+    margin-left: 130px;
+}
+
+.receipt{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+body{
+    display: flex;
 }
 
