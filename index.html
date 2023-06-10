@@ -2,123 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>style</title>
+    <title>Title</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container container-for-fixed burger-craft" id="burger-craft">
-
-    <div class="row">
-        <div class="container">
-            <div class="left-side">
-                <div class="burger-item clone-div">
-                    <div class="label">1. Chifla</div>
-                    <div class="field-row burger-options" data-option="3">
-                        <div class="field-wrap">
-                            <select name="choose-chifla" class="craft_select chifla">
-                                <option value="38" data-addon-price="8" data-addon-grams="60">CHIFLA BRIOCHE</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="burger-item clone-div">
-                    <div class="label">2. Carne</div>
-                    <div class="field-row burger-options" data-option="4">
-                        <div id="carne" class="field-wrap">
-                            <select name="choose-carne[]" class="craft_select carne">
-                                <option value="40" data-addon-price="35" data-addon-grams="150">P&Acirc;RJOALĂ VITĂ</option>
-                                <option value="41" data-addon-price="25" data-addon-grams="100">FILEU PUI PANE</option>
-                                <option value="79" data-addon-price="25" data-addon-grams="100">FILEU PUI GRILL</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-item clone-item button carne">
-                        <span class="plus-icon"></span>
-                        <span class="text">Adaugă item</span>
-                    </div>
-                </div>
-                <div class="burger-item clone-div">
-                    <div class="label">3. SOS CHIFLA</div>
-                    <div class="field-row burger-options" data-option="8">
-                        <div id="sos" class="field-wrap">
-                            <select name="choose-sos-chifla-jos[]" class="craft_select sos-chifla-jos">
-                                <option value="155" data-addon-price="0" data-addon-grams="0" >-</option>
-                                <option value="27" data-addon-price="4" data-addon-grams="20">SOS KETCHUP</option>
-                                <option value="29" data-addon-price="4" data-addon-grams="30">SOS TARTAR</option>
-                                <option value="30" data-addon-price="4" data-addon-grams="20">SOS MAIONEZĂ</option>
-                                <option value="34" data-addon-price="4" data-addon-grams="20">SOS USTUROI&amp;BBQ</option>
-                                <option value="35" data-addon-price="6" data-addon-grams="20">SOS SRIRACHA (iute)</option>
-                                <option value="48" data-addon-price="4" data-addon-grams="20">SOS CLASSY</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-item clone-item button">
-                        <span class="plus-icon"></span>
-                        <span class="text">Adaugă item</span>
-                    </div>
-                </div>
-                <div class="burger-item clone-div">
-                    <div class="label">5. Cascaval</div>
-                    <div class="field-row burger-options" data-option="5">
-                        <div id="cascaval" class="field-wrap">
-                            <select name="choose-cascaval[]" class="craft_select cascaval">
-                                <option value="156" data-addon-price="0" data-addon-grams="0">-</option>
-                                <option value="24" data-addon-price="12" data-addon-grams="20">CAȘCAVAL &quot;CHEDDAR&quot;</option>
-                                <option value="33" data-addon-price="15" data-addon-grams="25">CAȘCAVAL DORBLU</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-item clone-item button">
-                        <span class="plus-icon"></span>
-                        <span class="text">Adaugă item</span>
-                    </div>
-                </div>
-                <div class="burger-item clone-div">
-                    <div class="label">6. Topping</div>
-                    <div class="field-row burger-options" data-option="6">
-                        <div id="topping" class="field-wrap">
-                            <select name="choose-topping[]" class="craft_select topping">
-                                <option value="157" data-addon-price="0" data-addon-grams="0">-</option>
-                                <option value="22" data-addon-price="12" data-addon-grams="10">BACON CROCANT</option>
-                                <option value="23" data-addon-price="10" data-addon-grams="40">OU PRĂJIT</option>
-                                <option value="25" data-addon-price="2" data-addon-grams="10">CEAPĂ MARIN.</option>
-                                <option value="42" data-addon-price="4" data-addon-grams="20">CEAPĂ CARAMEL.</option>
-                                <option value="43" data-addon-price="4" data-addon-grams="30">CASTRAVETI MURATI</option>
-                                <option value="51" data-addon-price="4" data-addon-grams="20">CASTRAVEȚI PROASPEȚI</option>
-                                <option value="50" data-addon-price="5" data-addon-grams="40">ROȘII</option>
-                                <option value="52" data-addon-price="5" data-addon-grams="15">ICEBERG</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="add-item clone-item button ">
-                        <span class="plus-icon"></span>
-                        <span class="text">Adaugă item</span>
-                    </div>
-                </div>
-                <div class="personal-name-block field-wrap">
-                    <input type="text" name="personal_name" placeholder="Numește-ți burgerul 🍔" id="personal_name">
-                </div>
-                <hr class="totals-del">
-
-
-                <div class="craft-btns">
-                    <button class=" add_card">ADD TO CARD</button>
-                    <button class=" reset restart_btn">START FROM SCRATCH</button>
-
-                </div>
+<div class="burger-constructor">
+    <div class="burger-part">
+        <h3>1. BUN</h3>
+        <select id="bread" class="item-list">
+            <option value="brioche">BRIOCHE BUN (8 LEI)</option>
+        </select>
+    </div>
+    <div class="burger-part">
+        <h3>2. MEAT</h3>
+        <select id="meat" class="item-list">
+            <option value="beef patty">BEEF PATTY (35 лей)</option>
+            <option value="breaded chicken fillet">BREADED CHICKEN FILLET (25 LEI)</option>
+            <option value="grilled chicken fillet">GRILLED CHICKEN FILLET (25 LEI)</option>
+        </select>
+        <div class="add-item">
+            <div class="plus-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                </svg>
+            </div>
+            <span class="add-item text">ADD ITEM</span>
+        </div>
+    </div>
+    <div class="burger-part">
+        <h3>3. BOTTOM SAUCE</h3>
+        <select id="firstSauce" class="item-list">
+            <option value="none">-</option>
+            <option value="ketchup">KETCHUP (4 LEI)</option>
+            <option value="tartar sauce">TARTAR SAUCE (4 LEI)</option>
+            <option value="mayonnaise">MAYONNAISE (4 LEI)</option>
+            <option value="garlic&bbq sauce">GARLIC&BBQ (4 LEI)</option>
+            <option value="sriracha sauce">SIRACHA (6 LEI)</option>
+            <option value="classy sauce">CLASSY SAUCE (4 LEI)</option>
+            <option value="garlic sauce">GARLIC SAUCE (4 LEI)</option>
+        </select>
+        <div class="add-item">
+            <div class="plus-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                </svg>
+            </div>
+            <span class="add-item text">ADD ITEM</span>
+        </div>
+    </div>
+    <div class="burger-part">
+        <h3>4. TOP SAUCE</h3>
+        <select id="secondSauce" class="item-list">
+            <option value="none">-</option>
+            <option value="garlic sauce">GARLIC SAUCE (4 LEI)</option>
+            <option value="tartar sauce">TARTAR SAUCE (4 LEI)</option>
+            <option value="ketchup">KETCHUP (4 LEI)</option>
+            <option value="mayonnaise">MAYONNAISE(4 LEI)</option>
+            <option value="garlic&bbq sauce">GARLIC&BBQ(4 LEI)</option>
+            <option value="sriracha sauce">SIRACHA(6 LEI)</option>
+            <option value="classy sauce">CLASSY SAUCE (4 LEI)</option>
+        </select>
+        <div class="add-item">
+            <div class="plus-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                </svg>
+            </div>
+            <span class="add-item text">ADD ITEM</span>
+        </div>
+    </div>
+    <div class="burger-part">
+        <h3>5. CHEESE</h3>
+        <select id="cheese" class="item-list">
+            <option value="none">-</option>
+            <option value="cheddar cheese">"CHEDDAR" CHEESE (12 LEI)</option>
+            <option value="dorblu cheese">DORBLU CHEESE (15 LEI)</option>
+        </select>
+        <div class="add-item">
+            <div class="plus-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                </svg>
+            </div>
+            <span class="add-item text">ADD ITEM</span>
+        </div>
+    </div>
+    <div class="burger-part">
+        <h3>6. TOPPINGS</h3>
+        <select id="more" class="item-list">
+            <option value="none">-</option>
+            <option value="crispy bacon">CRISPY BACON (12 LEI)</option>
+            <option value="fried egg">FRIED EGG (10 LEI)</option>
+            <option value="marinated onion">MARINATED ONION (2 LEI)</option>
+            <option value="caramel onion">CARAMEL ONION (4 LEI)</option>
+            <option value="pickles">PICKLES (4 LEI)</option>
+            <option value="cucumber">CUCUMBER (4 LEI)</option>
+            <option value="tomato">TOMATO (5 LEI)</option>
+            <option value="iceberg lettuce">ICEBERG LETTUCE (5 LEI)</option>
+        </select>
+        <div class="add-item">
+            <div class="plus-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                </svg>
+            </div>
+            <span class="add-item text">ADD ITEM</span>
+        </div>
+        <div class="personal-name">
+            <input type="text" name="personal-name" id="personal-name" placeholder="Name your burger 🍔">
+        </div>
+    </div>
+    <div class="receipt">
+        <div class="total-price">
+            <div class="burger-parts">
 
             </div>
-
-            <div class="right-side">
-                <div class="burger-images" id="burgerbuild">
-
-                </div>
-            </div>
+            <h1>TOTAL : </h1>
+            <span class="price"></span>
+            <span class="mass"></span>
+        </div>
+        <div class="craft-buttons">
+            <button type="button" class="add-to-cart">
+                <h4>ADD TO CARD</h4>
+            </button>
+            <button type="button" class="reset-craft">
+                <h4>START FROM SCRATCH</h4>
+            </button>
         </div>
     </div>
 </div>
+<div class="burger-representation">
 
-
+</div>
 <script src="script.js"></script>
 </body>
 </html>
+
